@@ -1,2 +1,5 @@
+# It will be excluded all files
 *
+
+# Apart from the ones in week1 where further rules will apply
 !week1

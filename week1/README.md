@@ -15,7 +15,7 @@ In this folder are the scripts and essential data to run the practicals from the
 
 - [MyExampleScript.sh](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week1/code/MyExampleScript.sh) - basic script with USER inputs;
 
-- [UnixPrac1.txt](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week1/code/UnixPrac1.txt) - text file with several commands to run the [FASTA exercises](https://mhasoba.github.io/TheMulQuaBio/notebooks/01-Unix.html#:~:text=in%20sandbox)-,FASTA%20exercise,-%23);
+- [UnixPrac1.txt](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week1/code/UnixPrac1.txt) - text file with several commands to run the [FASTA exercises](https://mhasoba.github.io/TheMulQuaBio/notebooks/01-Unix.html#);
 
 - [boilerplate.sh](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week1/code/boilerplate.sh) - script template that describes built-in features;
 

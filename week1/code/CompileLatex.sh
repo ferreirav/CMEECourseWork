@@ -3,7 +3,7 @@
 # Author: Vitor Ferreira f.ferreira@imperial.ac.uk
 # Script: CompileLatex.sh
 # Description: This script captures the tex argument provided and convert it to pdf file
-# Arguments: none
+# Arguments: A LaTeX file should be provided
 # Date: Oct 2022
 
 # Get the argument and strip the extension
