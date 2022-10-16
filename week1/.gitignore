@@ -1,2 +1,5 @@
 # This will prevent output files to be uploaded
-results/*
+results/*.png
+results/*.pdf
+results/*.csv
+
