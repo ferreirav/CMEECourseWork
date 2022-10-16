@@ -1,5 +1,7 @@
-# It will be excluded all files
-*
+# Files and directories to be ignored
+*~
+*.tmp
+*.log
 
-# Apart from the ones in week1 where further rules will apply
-!week1
+# Currently ignoring week2
+week2/
