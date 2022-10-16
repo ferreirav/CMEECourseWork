@@ -6,10 +6,10 @@
 # Arguments: none
 # Date: Oct 2022
 
+# Get the argument and strip the extension
+a=`basename -s .tex $1`
 
-# Ask user for the input file and proceed with convertion
-echo "Enter the file to Compile without extension"
-read a
+# Initiate the Compilation of .tex file
 pdflatex $a.tex
 bibtex $a
 pdflatex $a.tex

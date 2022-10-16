@@ -8,6 +8,19 @@
 
 ### llustration of multiple use of variables ###
 
+# Checking if inputs are provided
+if [ -z "$1" ]
+    then
+        echo -e "No argument provided!!!\nPlease enter any two arguments!!!"
+    exit
+fi
+
+if [ $# -eq 1 ]
+    then
+        echo -e "Missing one argument!! \nPlease enter another argument!!!"
+    exit
+fi
+
 # Use of special variables provided by the user
 echo
 echo "***This script starts with the insertion of 2 arguments in the $0 ***"
@@ -19,7 +32,7 @@ echo -e "and the second argument it is: $2."
 echo
 echo
 
-sleep 1 # Provides a pause whilst running the script!
+sleep 5 # Provides a pause whilst running the script!
 
 
 # Assigned varibles whilst runnig the script

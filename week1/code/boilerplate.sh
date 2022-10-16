@@ -8,4 +8,4 @@
 
 echo -e "\n\tHello World!!!\n    This is a shell script!\n"
 
-#exit
+exit

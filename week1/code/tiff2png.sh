@@ -2,11 +2,11 @@
 
 # Author: Vitor Ferreira f.ferreira@imperial.ac.uk
 # Script: tiff2png.sh
-# Description: This script looks for TIFF files on a specific directory and converts these to PNG
+# Description: Looks for TIFF in data and makes conversion to PNG
 # Arguments: none
 # Date: Oct 2022
 
-
+# This 
 for f in ../data/*.tiff; 
     do  
 	echo $f

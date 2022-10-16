@@ -10,19 +10,18 @@
 # Testing if arguments were supplied
 if [ $# -eq 0 ]
     then
-        echo "Please provide a csv file to convert"
+        echo "Please provide a csv file for conversion!!"
     exit
 fi
 
 # Removing extension
-FILENAME=$(basename $1 .csv)
+FILENAME=`basename -s .csv $1`
 
 # Conversion Process
-echo "Creating a spaced delimited version of the $FILENAME..."
+echo "Creating a spaced delimited version of the $FILENAME file..."
 cat $1 | tr -s "," " " > ../results/$FILENAME.txt
 echo -e "Conversion is completed!!\nFile is located in ../results/ directory!"
 
 exit
 
 
-#exit

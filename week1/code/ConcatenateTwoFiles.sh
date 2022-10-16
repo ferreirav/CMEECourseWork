@@ -3,7 +3,7 @@
 # Author: Vitor Ferreira f.ferreira@imperial.ac.uk
 # Script: ConcatenateTwoFiles.sh
 # Description: This script merges two files
-# Arguments: Three files are given as arguments
+# Arguments: Two files are given as arguments
 # Date: Oct 2022
 
 # Inspecting if arguments were provided by the user
@@ -15,7 +15,7 @@ fi
 
 if [ $# -eq 1 ]
     then
-        echo "Missing one argument to be merged!"
+        echo "Missing one arguments to be merged!"
     exit
 fi
 
@@ -25,9 +25,8 @@ echo -e "\nPlease provide the name for the output file:"
 read a
 cat $1 > ../results/$a
 cat $2 >> ../results/$a
-echo "Your file $a is ready!"
+echo "Your file $a is ready and located in the results directory!"
 echo
 cat ../results/$a
-
 
 #exit
