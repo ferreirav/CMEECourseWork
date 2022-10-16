@@ -1,5 +1,0 @@
-# This will prevent output files to be uploaded
-results/*.png
-results/*.pdf
-results/*.csv
-
