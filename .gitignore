@@ -3,6 +3,6 @@
 *.tmp
 *.log
 
-# Currently ignoring week2
+# Currently ignoring further working weeks
 week2/
 week3/
