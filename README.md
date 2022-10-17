@@ -45,7 +45,6 @@ If you have any questions regarding the materials please get in touch.
 Vitor Ferreira
 
 f.ferreira@imperial.ac.uk
-
 <div>
 <img src="https://imperialcollegelondon.github.io/newimages/ImperialCollegeLondon.svg" title="ICL" alt="ICL" width="200" height="200"/>&nbsp;
 </div>

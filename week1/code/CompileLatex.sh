@@ -6,6 +6,13 @@
 # Arguments: A LaTeX file should be provided
 # Date: Oct 2022
 
+# Asking for input from the user
+if [ $# -eq 0 ]
+    then
+        echo "A TEX file should be supplied!"
+    exit
+fi
+
 # Get the argument and strip the extension
 a=`basename -s .tex $1`
 
