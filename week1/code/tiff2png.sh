@@ -6,7 +6,8 @@
 # Arguments: none
 # Date: Oct 2022
 
-# This 
+# This script takes all TIFF files na convert these into PNG files
+
 for f in ../data/*.tiff; 
     do  
 	echo $f
