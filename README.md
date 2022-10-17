@@ -47,5 +47,5 @@ Vitor Ferreira
 f.ferreira@imperial.ac.uk
 
 <div>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Imperial_logo.png/512px-Imperial_logo.png " title="ICL" alt="ICL" width="100" height="100"/>&nbsp;
+<img src="https://imperialcollegelondon.github.io/newimages/ImperialCollegeLondon.svg" title="ICL" alt="ICL" width="100" height="100"/>&nbsp;
 </div>
