@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-""" Handling CSVs """
+""" This script takes input files to read and writes output """
 
-__appname__ = ['boilerplate template']
+__appname__ = ['Handling CSVs']
 __author__ = 'Vitor Ferreira (f.ferreira22@imperial.ac.uk)'
 
 # imports

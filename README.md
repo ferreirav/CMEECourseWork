@@ -15,7 +15,23 @@ On [Week1](https://github.com/vitorlcferreira/CMEECourseWork/tree/master/week1) 
 - LaTeX
 <br>
 
+On [Week2](https://github.com/vitorlcferreira/CMEECourseWork/tree/master/week2) the focus was particularly on Python programming languages:
+The main learning was based on:
 
+- Basic syntax and data structiures
+
+- ipython Environment
+
+- Writing Python code, loops, comprehensions and functions
+
+- Implementation of control flows
+
+- Pyhton Input/Output
+
+- Writing, debbugging, using and testing Python functions
+
+- 
+<br>
 ---
 
 ## Technical Skills

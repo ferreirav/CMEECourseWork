@@ -67,8 +67,11 @@ print("After calling a_function, outside the function, the value of "
       "_a_global is (still)", _a_global)
 print("After calling a_function, outside the function, the value of "
       "_b_global is (still)", _b_global)
-print("After calling a_function, outside the function, the value of "
+try:
+    print("After calling a_function, outside the function, the value of "
       "_a_local is ", _a_local)
+except:
+    print("*** No 'local_variable' outside the function available! ***")
 
 
 # Another Example 1
