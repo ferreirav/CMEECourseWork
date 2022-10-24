@@ -1,10 +1,11 @@
-# This gitignore file states the files and folders that should be pushed to my repository!
-# Ignoring all files
-*
+# Setting rules to ignore push files
 
-# Selecting only the ones that should be pushed
-!.gitignore
+# Setting rules for directories
+*week3/
 
-!week1/
-!week2/*
-!*.md
+# Rules for files
+*.idea
+*.vscode
+*.RData
+*.Rhistory
+
