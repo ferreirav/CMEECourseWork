@@ -15,10 +15,10 @@ On [Week1](https://github.com/vitorlcferreira/CMEECourseWork/tree/master/week1) 
 - LaTeX
 <br>
 
-On [Week2](https://github.com/vitorlcferreira/CMEECourseWork/tree/master/week2) the focus was particularly on Python programming languages:
+On [Week2](https://github.com/vitorlcferreira/CMEECourseWork/tree/master/week2) the focus was particularly on Python programming languages.
 The main learning was based on:
 
-- Basic syntax and data structiures
+- Basic syntax and data structures
 
 - ipython Environment
 
@@ -30,7 +30,6 @@ The main learning was based on:
 
 - Writing, debbugging, using and testing Python functions
 
-- 
 <br>
 ---
 
@@ -63,4 +62,7 @@ Vitor Ferreira
 f.ferreira@imperial.ac.uk
 <div>
 <img src="https://imperialcollegelondon.github.io/newimages/ImperialCollegeLondon.svg" title="ICL" alt="ICL" width="200" height="200"/>&nbsp;
+</div>
+<div>
+<img src="https://github.com/mhasoba/TheMulQuaBio/blob/master/content/lectures/LinearModels/graphics/Imperial_Color1.pdf" title="ICL2" alt="ICL2" width="200" height="200"/>&nbsp;
 </div>
