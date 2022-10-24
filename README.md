@@ -1,4 +1,4 @@
-# This is my CMEE Repository.
+# This is my CMEE Repository
 
 This repository is based on my training for Computational Biology at Imperial College London.
 The scripts and contents find here are based on the [TheMulQuaBio](https://mhasoba.github.io/TheMulQuaBio/intro.html) repository, authored by [Samraat Pawar](https://www.imperial.ac.uk/people/s.pawar).

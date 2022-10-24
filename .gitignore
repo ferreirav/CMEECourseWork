@@ -1,8 +1,8 @@
-# Files and directories to be ignored
-*~
-*.tmp
-*.log
+# This gitignore file states the files and folders that should be pushed to my repository!
+# Ignoring all files
+*
 
-# Currently ignoring further working weeks
-week2/
-week3/
+# Selecting only the ones that should be pushed
+!week1/
+!week2/
+!*.md
