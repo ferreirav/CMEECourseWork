@@ -3,6 +3,7 @@
 *
 
 # Selecting only the ones that should be pushed
-!week1
-!week2
+!.gitignore
+!week1/*
+!week2/*
 !*.md
