@@ -1,0 +1,759 @@
+Starting code feedback for Vitor, Week1
+
+Current Points = 100
+
+Note that: 
+(1) Major sections begin with a double "====" line 
+(2) Subsections begin with a single "====" line 
+(3) Code output or text file content are printed within single "*****" lines 
+
+======================================================================
+======================================================================
+Your Git repo size this week is about 3.67 MiB on disk 
+
+PART 1: Checking project workflow...
+
+Found the following directories in parent directory: .git, week1, Feedback
+
+Found the following files in parent directory: .gitignore, README.md
+
+Checking for key files in parent directory...
+
+Found .gitignore in parent directory, great! 
+
+Printing contents of .gitignore:
+
+**********************************************************************
+# Files and directories to be ignored
+*~
+*.tmp
+*.log
+
+# Currently ignoring further working weeks
+week2/
+week3/
+**********************************************************************
+
+Found README in parent directory, named: README.md
+
+Printing contents of README.md:
+
+**********************************************************************
+# This is my CMEE Repository.
+
+This repository is based on my training for Computational Biology at Imperial College London.
+The scripts and contents find here are based on the [TheMulQuaBio](https://mhasoba.github.io/TheMulQuaBio/intro.html) repository, authored by [Samraat Pawar](https://www.imperial.ac.uk/people/s.pawar).
+
+
+Over this course I will gain competence over programming languages such as BASH, Pyhton and R.
+
+On [Week1](https://github.com/vitorlcferreira/CMEECourseWork/tree/master/week1) we focused on:
+
+- UNIX and BASH
+
+- Shell Scripting
+
+- LaTeX
+<br>
+
+
+---
+
+## Technical Skills
+
+### Programming Languages
+
+<div>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/r/r-original.svg" title="R" alt="R" width="80" height="80"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original-wordmark.svg" title="Python" alt="Python" width="80" height="80"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/bash/bash-original.svg" title="Bash" alt="Bash" width="80" height="80"/>&nbsp;
+</div>
+<br>
+
+### Other Tools
+
+<div>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/linux/linux-original.svg" title="Linux" alt="Linux" width="80" height="80"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg" title="Git" alt="Git" width="80" height="80"/>&nbsp;
+</div>
+<br>
+
+---
+
+
+If you have any questions regarding the materials please get in touch.
+
+Vitor Ferreira
+
+f.ferreira@imperial.ac.uk
+<div>
+<img src="https://imperialcollegelondon.github.io/newimages/ImperialCollegeLondon.svg" title="ICL" alt="ICL" width="200" height="200"/>&nbsp;
+</div>
+
+**********************************************************************
+
+======================================================================
+Looking for the weekly directories...
+
+Found 1 weekly directories: week1
+
+The Week1 directory will be assessed 
+
+======================================================================
+======================================================================
+PART 2: Checking weekly code and workflow...
+
+======================================================================
+Assessing WEEK1...
+
+Found the following directories: code, sandbox, data, results
+
+Found the following files: README.md
+
+Checking for readme file in weekly directory...
+
+Found README in parent directory, named: README.md
+
+Printing contents of README.md:
+
+**********************************************************************
+
+# Week 1
+
+In this folder are the scripts and essential data to run the practicals from the first week of the course. Inside the folder [code](https://github.com/vitorlcferreira/CMEECourseWork/tree/master/week1/code) you will find the following scripts that perform different tasks:
+
+- [CompileLatex.sh](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week1/code/CompileLatex.sh) - this script will compile a tex file into a pdf output file;
+
+- [ConcatenateTwoFiles.sh](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week1/code/ConcatenateTwoFiles.sh) - a script to merge two files;
+
+- [CountLines.sh](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week1/code/CountLines.sh) - a script to count the number of lines in a given file;
+
+- [FirstBiblio.bib](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week1/code/CountLines.sh) - a BibTex file to be provided to the compilation of a LaTex document;
+
+- [FirstExample.tex](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week1/code/FirstExample.tex) - article format document LaTeX sourced;
+
+- [MyExampleScript.sh](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week1/code/MyExampleScript.sh) - basic script with USER inputs;
+
+- [UnixPrac1.txt](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week1/code/UnixPrac1.txt) - text file with several commands to run the [FASTA exercises](https://mhasoba.github.io/TheMulQuaBio/notebooks/01-Unix.html#);
+
+- [boilerplate.sh](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week1/code/boilerplate.sh) - script template that describes built-in features;
+
+- [csvtospace.sh](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week1/code/csvtospace.sh) - script that transforms a csv file into spaced file;
+
+- [tabtocsv.sh](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week1/code/tabtocsv.sh) - transforms tab separated files into comma separated files;
+
+- [tiff2png.sh](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week1/code/tabtocsv.sh) - this scripts takes [TIFF](https://en.wikipedia.org/wiki/TIFF) files and transform these into [PNG](https://en.wikipedia.org/wiki/TIFF) files;
+
+- [variables.sh](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week1/code/variables.sh) - script that illustrates the use of different inputs and variables.
+**********************************************************************
+
+Results directory is empty - good! 
+
+Found 12 code files: ConcatenateTwoFiles.sh, CountLines.sh, FirstExample.tex, CompileLatex.sh, variables.sh, boilerplate.sh, tiff2png.sh, MyExampleScript.sh, tabtocsv.sh, csvtospace.sh, UnixPrac1.txt, FirstBiblio.bib
+
+======================================================================
+Testing script/code files...
+
+======================================================================
+Inspecting script file ConcatenateTwoFiles.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/bash
+
+# Author: Vitor Ferreira f.ferreira@imperial.ac.uk
+# Script: ConcatenateTwoFiles.sh
+# Description: This script merges two files
+# Arguments: Two files are given as arguments
+# Date: Oct 2022
+
+# Inspecting if arguments were provided by the user
+if [ -z "$1" ]
+    then
+        echo "No argument supplied!!!"
+    exit
+fi
+
+if [ $# -eq 1 ]
+    then
+        echo "Missing one arguments to be merged!"
+    exit
+fi
+
+# Arguments $1 and $2 are given by the user to be merged to be merged
+
+echo -e "\nPlease provide the name for the output file:"
+read a
+cat $1 > ../results/$a
+cat $2 >> ../results/$a
+echo "Your file $a is ready and located in the results directory!"
+echo
+cat ../results/$a
+
+#exit
+
+**********************************************************************
+
+Testing ConcatenateTwoFiles.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+No argument supplied!!!
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.00460s
+
+======================================================================
+Inspecting script file CountLines.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/bash
+
+# Author: Vitor Ferreira f.ferreira@imperial.ac.uk
+# Script: CountLines.sh
+# Description: This script count the number of lines in a given argument
+# Arguments: 1
+# Date: Oct 2022
+
+if [ -z "$1" ]
+    then
+        echo "At least one argument must be provided!"
+    exit
+fi
+
+
+FILENAME=$(basename $1)
+
+NumLines=`wc -l < $1` #Capture the input from the argument given
+echo -e "\nThe file $FILENAME has $NumLines lines." #Print the result to the terminal
+echo
+
+#exit
+**********************************************************************
+
+Testing CountLines.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+At least one argument must be provided!
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.00566s
+
+======================================================================
+Inspecting script file FirstExample.tex...
+
+File contents are:
+
+**********************************************************************
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+
+\title{A very simple document on the Metabolic Theory of Ecology}
+
+\author{Vitor Ferreira}
+
+\date{}
+
+\begin{document}
+  \maketitle
+  
+  \begin{abstract}
+
+    This paper elaborates on the principles of chemistry, physics and biology drawn into a fundamental equation that links indididuals to higher orders of organization.
+  \end{abstract}
+  
+  \section{Introduction}
+
+    Metabolism is the rate that organisms uptake and allocate resources for their growth, survival and reproduction \cite{brown2004toward}.
+
+  \section{Materials \& Methods}
+
+    Accounting for the effects of body size and temperature on individual metabolic rates, the formula can be provided as follows:
+  
+  \begin{equation}
+    I = i_0 M^\frac{3}{4} e^\frac{-E}{kT}
+  \end{equation}
+
+    where, $i_0$ is the normalization constant, $M$ is the body size, $E$ is the activation energy, $k$ the Boltzmann's constant and $T$ is the absolute temperature in K.
+
+
+  \section{Results}
+
+    \begin{figure}[H]
+      \begin{center}
+      \includegraphics[width=0.8\textwidth]{../data/mass_dependence_temp.jpg}
+      \caption{Mass dependence of temperature-corrected maximal rates of whole-organism biomass production.}
+      \label{fig:mass_dep_temp}
+      \end{center}
+    \end{figure}
+
+  \section{Discussion}
+
+    The allometric scaling of this phenomenum applies across several orders of magnitude and levels of organization.
+
+  \bibliographystyle{plain}
+  
+  \bibliography{FirstBiblio}
+
+\end{document}
+**********************************************************************
+
+Testing FirstExample.tex...
+
+======================================================================
+Inspecting script file CompileLatex.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/bash
+
+# Author: Vitor Ferreira f.ferreira@imperial.ac.uk
+# Script: CompileLatex.sh
+# Description: This script captures the tex argument provided and convert it to pdf file
+# Arguments: A LaTeX file should be provided
+# Date: Oct 2022
+
+# Asking for input from the user
+if [ $# -eq 0 ]
+    then
+        echo "A TEX file should be supplied!"
+    exit
+fi
+
+# Get the argument and strip the extension
+a=`basename -s .tex $1`
+
+# Initiate the Compilation of .tex file
+pdflatex $a.tex
+bibtex $a
+pdflatex $a.tex
+pdflatex $a.tex
+mv $a.pdf ../results/
+evince ../results/$a.pdf &
+
+# After compilation, files created will be removed
+rm *.aux
+rm *.log
+rm *.bbl
+rm *.blg
+
+#exit
+
+**********************************************************************
+
+Testing CompileLatex.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+A TEX file should be supplied!
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.00565s
+
+======================================================================
+Inspecting script file variables.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/bash
+
+# Author: Vitor Ferreira f.ferreira@imperial.ac.uk
+# Script: variable.sh
+# Description: Script illustrating the use of different variable types in BASH
+# Arguments: several
+# Date: Oct 2022
+
+### llustration of multiple use of variables ###
+
+# Checking if inputs are provided
+if [ -z "$1" ]
+    then
+        echo -e "No argument provided!!!\nPlease enter any two arguments!!!"
+    exit
+fi
+
+if [ $# -eq 1 ]
+    then
+        echo -e "Missing one argument!! \nPlease enter another argument!!!"
+    exit
+fi
+
+# Use of special variables provided by the user
+echo
+echo "***This script starts with the insertion of 2 arguments in the $0 ***"
+echo "This script is called $0."
+echo "This script was entered $# arguments."
+echo -e "\nThe arguments are as follow:\n$@."
+echo "Being the first argument: $1;"
+echo -e "and the second argument it is: $2."
+echo
+echo
+
+sleep 5 # Provides a pause whilst running the script!
+
+
+# Assigned varibles whilst runnig the script
+# Below we illustrate the change of a variable fed by the user
+
+MY_VAR="Hello world!!!"
+echo "***Now we will be looking at example of assigned variables***"
+echo "The current value of the variable it is: $MY_VAR"
+echo "Please enter a new string:"
+read MY_VAR
+echo "The variable has now been assigned to: $MY_VAR"
+echo
+echo
+
+
+sleep 1 # Provides a pause whilst running the script!
+
+
+# Assigning variables - Reading multiple inputs from user
+echo "***For last, we will use inputs from user to execute COMMAND inside the script***"
+echo "Enter two numbers separated by space:"
+read a b
+echo
+echo -e "The values enteres are $a and $b.\nTheir sum it is:"
+MY_SUM=$(expr $a + $b)
+echo $MY_SUM
+echo
+echo
+echo -e "You have now completed the $0 script!\n"
+**********************************************************************
+
+Testing variables.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+No argument provided!!!
+Please enter any two arguments!!!
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.00451s
+
+======================================================================
+Inspecting script file boilerplate.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/bash
+
+# Author: Vitor Ferreira f.ferreira@imperial.ac.uk
+# Script: boilerplate.sh
+# Description: boilerplate script with ownership details
+# Arguments: none
+# Date: Oct 2022
+
+echo -e "\n\tHello World!!!\n    This is a shell script!\n"
+
+exit
+**********************************************************************
+
+Testing boilerplate.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+
+	Hello World!!!
+    This is a shell script!
+
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.00784s
+
+======================================================================
+Inspecting script file tiff2png.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/bash
+
+# Author: Vitor Ferreira f.ferreira@imperial.ac.uk
+# Script: tiff2png.sh
+# Description: Looks for TIFF in data and makes conversion to PNG
+# Arguments: none
+# Date: Oct 2022
+
+# This script takes all TIFF files na convert these into PNG files
+
+for f in ../data/*.tiff; 
+    do  
+	echo $f
+        echo "Converting $f"; 
+        convert "$f"  "$(basename "$f" .tiff).png";
+        echo "Conversion completed!" 
+    done
+
+mv *.png ../results/
+
+**********************************************************************
+
+Testing tiff2png.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+../data/coding.tiff
+Converting ../data/coding.tiff
+Conversion completed!
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.37986s
+
+======================================================================
+Inspecting script file MyExampleScript.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/bash
+
+# Author: Vitor Ferreira f.ferreira@imperial.ac.uk
+# Script: MyExampleScript.sh
+# Description: basic script dealing with USER input
+# Arguments: none
+# Date: Oct 2022
+
+MSG1="HELLO"
+MSG2=$USER
+echo "$MSG1 $MSG2"
+echo "Hello $USER"
+echo
+
+#exit
+
+**********************************************************************
+
+Testing MyExampleScript.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+HELLO mhasoba
+Hello mhasoba
+
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.00483s
+
+======================================================================
+Inspecting script file tabtocsv.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/bash
+
+# Author: Vitor Ferreira f.ferreira@imperial.ac.uk
+# Script: tabtocsv.sh
+# Description: changes tab separated files into csv files
+# Arguments: tab delimited file
+# Date: Oct 2022
+
+
+# Testing if arguments were supplied
+if [ -z "$1" ]
+    then
+        echo "No argument supplied!!!"
+    exit
+fi
+
+
+# Removing extension
+FILENAME=$(basename $1 .txt)
+#This script has a limitation that it only takes *.txt file
+
+# Doing conversion
+echo "Creating a comma delimited version of the $FILENAME..."
+cat $1 | tr -s '\t' ',' > ../results/$FILENAME.csv
+echo -e "Conversion is completed!!\nFile is located in ../results/ directory!"
+
+exit
+**********************************************************************
+
+Testing tabtocsv.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+No argument supplied!!!
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.00585s
+
+======================================================================
+Inspecting script file csvtospace.sh...
+
+File contents are:
+
+**********************************************************************
+#!/bin/bash
+
+# Author: Vitor Ferreira f.ferreira@imperial.ac.uk
+# Script: csvtospace.sh
+# Description: This script takes csv files and convert these to space separated values file.
+# Arguments: CSV file
+# Date: Oct 2022
+
+
+# Testing if arguments were supplied
+if [ $# -eq 0 ]
+    then
+        echo "Please provide a csv file for conversion!!"
+    exit
+fi
+
+# Removing extension
+FILENAME=`basename -s .csv $1`
+
+# Conversion Process
+echo "Creating a spaced delimited version of the $FILENAME file..."
+cat $1 | tr -s "," " " > ../results/$FILENAME.txt
+echo -e "Conversion is completed!!\nFile is located in ../results/ directory!"
+
+exit
+
+
+
+**********************************************************************
+
+Testing csvtospace.sh...
+
+Output (only first 500 characters): 
+
+
+**********************************************************************
+Please provide a csv file for conversion!!
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.00593s
+
+======================================================================
+Inspecting script file UnixPrac1.txt...
+
+File contents are:
+
+**********************************************************************
+# Author: Vitor Ferreira f.ferreira@imperial.ac.uk
+# Script: UniPrac1.txt
+# Description: Shell commands to solve the FASTA exercises 
+# Arguments: none
+# Date: Oct 2022
+
+Below are the commands to solve 4 questions from Practical 1 on fasta files found in the data/fasta directory
+
+
+#1 Count how many lines there are in each file
+echo -e "\nThe FASTA files contained in fasta directory have the following amount of lines:\n" && 
+wc -l ../data/fasta/E.coli.fasta && 
+wc -l ../data/fasta/407228412.fasta && 
+wc -l ../data/fasta/407228326.fasta
+
+
+#2 Print everything starting from the second line for the E.coli genome
+tail -n +2 ../data/fasta/E.coli.fasta &&
+echo -e "Reached the end of E.coli genome\n"
+
+
+#3 Count the genome sequence lenght of this genome
+seq_len=$(tail -n +2 ../data/fasta/E.coli.fasta | wc -m) &&
+echo -e "\nThe sequence lenght of the Genome is $seq_len.\n"
+
+
+#4 Count the matches of a particular sequence "ATGC" in the genome of E.coli
+match_seq=$(tail -n +2 ../data/fasta/E.coli.fasta | tr -d "\n" | grep -Fo "ATGC" | wc -l) &&
+echo -e "\nIt was found $match_seq 'ATGC' matches in E.coli genome.\n"
+
+#5 Compute the AT/GC ratio of E.coli genome
+AT=$(tail -n +2 ../data/fasta/E.coli.fasta | tr -d "\n" | grep -o [A,T] | wc -l) && 
+GC=$(tail -n +2 ../data/fasta/E.coli.fasta | tr -d "\n" | grep -o [G,C] | wc -l) &&
+echo "scale=3;$AT/$GC" | bc
+
+**********************************************************************
+
+Testing UnixPrac1.txt...
+
+======================================================================
+Inspecting script file FirstBiblio.bib...
+
+File contents are:
+
+**********************************************************************
+@article{brown2004toward,
+  title={Toward a metabolic theory of ecology},
+  author={Brown, James H and Gillooly, James F and Allen, Andrew P and Savage, Van M and West, Geoffrey B},
+  journal={Ecology},
+  volume={85},
+  number={7},
+  pages={1771--1789},
+  year={2004},
+  publisher={Wiley Online Library}
+}
+**********************************************************************
+
+Testing FirstBiblio.bib...
+
+======================================================================
+======================================================================
+Finished running scripts
+
+Ran into 0 errors
+
+======================================================================
+======================================================================
+
+FINISHED WEEKLY ASSESSMENT
+
+Current Points for the Week = 100
+
+NOTE THAT THESE ARE POINTS, NOT MARKS FOR THE WEEK!
