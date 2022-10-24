@@ -31,6 +31,7 @@ The main learning was based on:
 - Writing, debbugging, using and testing Python functions
 
 <br>
+
 ---
 
 ## Technical Skills
@@ -62,7 +63,4 @@ Vitor Ferreira
 f.ferreira@imperial.ac.uk
 <div>
 <img src="https://imperialcollegelondon.github.io/newimages/ImperialCollegeLondon.svg" title="ICL" alt="ICL" width="200" height="200"/>&nbsp;
-</div>
-<div>
-<img src="https://github.com/mhasoba/TheMulQuaBio/blob/master/content/lectures/LinearModels/graphics/Imperial_Color1.pdf" title="ICL2" alt="ICL2" width="200" height="200"/>&nbsp;
 </div>
