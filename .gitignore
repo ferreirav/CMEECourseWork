@@ -3,6 +3,6 @@
 *
 
 # Selecting only the ones that should be pushed
-!week1/
-!week2/
+!week1
+!week2
 !*.md
