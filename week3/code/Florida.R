@@ -22,19 +22,22 @@ print("Initialising analysis on Florida Practical...")
 # Loading data
 load("../data/KeyWestAnnualMeanTemperature.RData")
 
+# Correlations between Years and Temperature
+long_term_cor <- round(cor(ats$Year, ats$Temp), 2)
+
 print("*** Plotting and saving scatterplot in results! ***")
+
 # Initial plotting
 png("../results/Florida_Temperatures.png")
 plot(ats$Year, ats$Temp,
      main = "Annual Temperatures from Key West in Florida",
      xlab = "Year",
      ylab = "Temperature (\u00b0C)")
+text(x = 1980, y = 24.5, paste( "r = ", long_term_cor), col = "red")
 abline(lm(ats$Temp ~ ats$Year), col = "red", lty = 3, lwd = 2)
 graphics.off()
 
 
-# Correlations between Years and Temperature
-long_term_cor <- cor(ats$Year, ats$Temp)
 
 print("*** Sampling data and calculating correlation coefiicients...***")
 # Randomly generating samples

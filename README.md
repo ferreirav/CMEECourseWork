@@ -50,11 +50,11 @@ In [Week3](...) we continue to develop skills on Biological computing using R. P
 
 - Introduction to sql databases in R
 
-## Dependencies:
+### Dependencies:
 
 To run some of the scripts found in this folder, some specific packages are required. Please run the following code in R interpreter:
 ```R
-install.packages(c("tidyverse", "maps", "reshape2"))
+install.packages(c("tidyverse", "maps", "reshape2", "sqldf"))
 ```
 ---
 

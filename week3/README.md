@@ -1,7 +1,7 @@
 
 # Week 3
 
-In this folder are the scripts and essential data to run the practicals from the third week of the course. Inside the folder [code](https://github.com/vitorlcferreira/CMEECourseWork/tree/master/week3/code) you will find the python scripts that perform the following tasks:
+In this folder are the scripts and essential data to run the practicals from the third week of the course. Inside the folder [code](https://github.com/vitorlcferreira/CMEECourseWork/tree/master/week3/code) you will find the R scripts that perform the following tasks:
 
 - [basic_io.R](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week3/code/basic_io.R) - Simple script illustrating R inputs and outputs
 
@@ -51,9 +51,8 @@ In this folder are the scripts and essential data to run the practicals from the
 
 - [GPDD_Data.R](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week3/code/GPDD_Data.R) - This script plots the distributions of populations form GPDD database
 
-- [CompileLatex.sh](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week3/code/CompileLatex.sh) - 
+- [Florida_LaTeX.sh](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week3/code/Florida_LaTeX.sh) - shell script that runs Florida analysis, compiles TEX file and produces the PDF
 
-- [Florida_Prac.tex](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week3/code/Florida_Prac.tex) - 
+- [Florida_Prac.tex](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week3/code/Florida_Prac.tex) - source LaTeX code for the Florida results
 
-- [Florida_Biblio.bib](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week3/code/Florida_Biblio.bib) - 
-
+- [SQLinR.R](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week3/code/SQLinR.R) - script handles with database manipulations and queries
