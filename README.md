@@ -32,6 +32,30 @@ The main learning was based on:
 
 <br>
 
+In [Week3](...) we continue to develop skills on Biological computing using R. Particularly, the learning was based on:
+
+- Basic R syntax and programming conventions
+
+- Principles of data processing and exploration
+
+- Clean and efficient programming using R
+
+- Developing reproducible data analysis workflows
+
+- Introduction to vectorization and efficiency for simulations
+
+- Finding, fixing and catching erros with debugging
+
+- Data wrangling, visualization with tidyverse
+
+- Introduction to sql databases in R
+
+## Dependencies:
+
+To run some of the scripts found in this folder, some specific packages are required. Please run the following code in R interpreter:
+```R
+install.packages(c("tidyverse", "maps", "reshape2"))
+```
 ---
 
 ## Technical Skills
@@ -60,7 +84,7 @@ If you have any questions regarding the materials please get in touch.
 
 Vitor Ferreira
 
-f.ferreira@imperial.ac.uk
+f.ferreira22@imperial.ac.uk
 <div>
 <img src="https://imperialcollegelondon.github.io/newimages/ImperialCollegeLondon.svg" title="ICL" alt="ICL" width="200" height="200"/>&nbsp;
 </div>

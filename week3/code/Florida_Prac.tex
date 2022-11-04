@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage[left=15mm, right=15mm, top=5mm, bottom=5mm]{geometry}
+\usepackage{subcaption}
+
+\title{Is Florida getting warmer?}
+
+\author{Vitor Ferreira \\ MRes CMEE -- f.ferreira22@imperial.ac.uk}
+
+\date{\today}
+
+\begin{document}
+  \maketitle
+  
+    \section{Introduction}
+
+    There are increasing warnings that temperatures are rising across the globe. During the practical in Biological Computing in R from the TheMulQuaBio repo, we were presented with recorded temperatures across several years in Florida. We investigated here if re-sampling these temperatures would give us the same pattern as seen initially.
+    
+  \section{Methods}
+
+    We used sampled data for Key West area and calculate the correlation coefficient betwen Temperatures and Year.
+    After, we generate a random sample of the temperatures across the years and iterate this operation 1,000 times. For each iteration we calculated its relative correlation coefficient and after produced the histogram of the coefficients. To understand the significance of our results we calculate the probability of our randomized results, by chance.
+    This was calculated as follows:
+  
+  \begin{equation}
+    P(x) = \frac{TotalCorrelationsGreaterThan}{Total Iterations}
+  \end{equation}
+
+
+  \section{Results}
+
+    \begin{figure}[H]
+      \centering
+      \begin{subfigure}{.45\textwidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{../results/Florida_Temperatures.png}
+        \caption{Temperature Scatterplot}
+        \label{fig:sub1}
+      \end{subfigure}
+      \begin{subfigure}{.45\textwidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{../results/Florida_Corr_Histogram.png}
+        \caption{Frequency of Correlations}
+        \label{fig:sub2}
+      \end{subfigure}
+      \label{fig:test}
+    \end{figure}
+
+
+  \section{Discussion}
+
+    We conclude that, despite evidence amounting for the increase of temperatures across the globe, our randomized sampling indicates a correlation different from initial calculated correlation.
+    
+    
+  \bibliographystyle{plain}
+   
+\end{document}

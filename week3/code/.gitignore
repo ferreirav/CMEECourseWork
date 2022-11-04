@@ -1,0 +1,3 @@
+# Gitignore file that instructs the files that should be retained
+*.pdf
+*.Rhistory

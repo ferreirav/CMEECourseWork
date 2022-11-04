@@ -1,12 +1,13 @@
 # Setting rules to ignore push files
 
 # Setting rules for directories
-*week3/
 *week4/
+*.debris/
 
 # Rules for files
 *.idea
 *.vscode
 *.RData
 *.Rhistory
+
 
