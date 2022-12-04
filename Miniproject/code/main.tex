@@ -1,0 +1,320 @@
+\documentclass[11]{article}
+
+% packages
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{lineno}
+\usepackage{lipsum}
+\usepackage{multirow, booktabs}
+
+% Title of the report
+\title{Mechanical and Phenomenological model performance in bacterial growth curves}
+
+
+\begin{document}
+
+    \begin{titlepage}
+
+    \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+    
+    
+  
+    
+    \center % Center everything on the page
+    
+    %--------------------------------------------------------------------------
+    %	HEADING SECTIONS
+    %--------------------------------------------------------------------------
+    \quad\\[1cm]
+    \textsc{\Large Imperial College London}\\[1cm] % Name of your university/college
+    \textsc{\Large School of Life Sciences, Silwood Park Campus}\\[0.4cm] % Major heading such as course name
+    \textsc{\large Computational Methods for Ecology and Evolution}\\[0.5cm] % Minor heading such as course title
+    
+    %--------------------------------------------------------------------------
+    %	TITLE SECTION
+    %--------------------------------------------------------------------------
+    \makeatletter
+    \HRule \\[0.4cm]
+    { \huge \bfseries \@title}\\[0.4cm] % Title of your document
+    \HRule \\[0.5cm]
+     
+    %--------------------------------------------------------------------------
+    %	AUTHOR SECTION
+    %--------------------------------------------------------------------------
+    
+    \begin{minipage}{0.4\textwidth}
+    \begin{flushleft} \large
+    \emph{Author:}\\
+    Vitor Ferreira
+    \end{flushleft}
+    \end{minipage}
+    ~
+    \begin{minipage}{0.4\textwidth}
+    \begin{flushright} \large
+    % Uncomment the following lines for a co-supervisor
+    %\\[1.2em] % Supervisor's Name
+    %\emph{Co-Supervisor:} \\
+    % Dr. Adam Smith % second marker's name
+    \end{flushright}
+    \end{minipage}\\[3cm]
+    \makeatother
+    
+    
+    %--------------------------------------------------------------------------
+    %	DATE SECTION
+    %--------------------------------------------------------------------------
+    
+    {\large Mini Project submission as part of }\\[0.5cm]
+    {\large \ CMEE coursework }\\[0.5cm] %emph{CMEEs} for italics
+    {\large \today}\\[1cm] % Date
+    {\large Word count: 1840}
+    
+    \vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+    
+    
+    %document configurations
+    \onehalfspacing
+    \linenumbers
+
+    % Report Sections
+
+    \section{Introduction}
+
+The process of modeling natural systems it is an important challenge in ecology and evolution. Traditionally, there are generated logical hypothesis within experimental designs which are evaluated statistically, under a probability threshold, and if these fall under that threshold we can attribute up to certain level a biological explanation for that pattern or behaviour seen in the data, although sometimes the power of this significance is not accounted for \cite{johnson1999insignificance}. Alternatively, there is a construction of models that relies on the formulation of mathematical functions that can explain biological processes and capture the patterns seen in the data. This process implies that assumptions are made to the data so there will be a trade-off between generality, precision and realism that can be depicted from the models \cite{levins1966strategy}. Typical population dynamics studies implement mathematical functions that start from general laws bounded by their implicit limitations but also accounting for oscillations \cite{turchin2013complex}.
+
+Bacteria are particularly an important organism for the food industry \cite{whiting1995microbial}, water management systems \cite{pachepsky2018microbial} and, more recently, have been gaining importance in the field of ecosystem engineering \cite{graham2016microbes}.
+Their recognised importance have led to the development of several models to explain its population growth curves \cite{zwietering1994modeling}. These dynamics normally can be described by the application of phenomenological and mechanistic models. The former are models that establish the relationship between the data and the phenomenon or pattern. Phenomenological models are flexible as they make no assumptions and can provide predictive power with the existence of statistical significance. Mechanistic models have a theoretical base that aims to explain the processes in the data providing more precision and realism with the inclusion of more parameters. However, these are not seen as totally distinct, as normally phenomenological models form the basis for the existence general dynamics that can lead to development of specific biological inferences in mechanistic models.
+
+Several mathematical models have been describing microbial growth curves \cite{zwietering1994modeling}. These are characterised by a sigmoidal S-shape curve with four stages. The initial phase in the "Lag Phase", normally described as the phase of adaptation for new environment, the "Maximum Growth Phase" that happens when organisms start make use of their optimal fit and divide at a constant rate until they reach the "Stationary Phase" when resources start to be scarce, the environment gets saturated and growth rates start to reduce until a plateau is reached. The last phase is the "Mortality Phase" where a crowded environment polluted with metabolites cannot sustain indefinite growth \cite{peleg2011microbial}, although this last phase is usually disregarded in most microbiological studies. To study the behaviour of microbial population dynamics most mechanistic models essentially rely on parameters such as the initial population size, growth rates and carrying capacity, while others add-on an extra feature that capture the lag-phase. These are the Logistic (Verhulst) model and the Gompertz model, respectively.
+
+Along side the development of mathematical models there has been a strong emphasis on information criterion to support the process of model selection. These techniques, such as Akaike Information Criterion (AIC) and Bayesian Information Criterion (BIC), that uses a maximum likelihood method to measure the lack of fit between competing models and penalises the models with more complexity \cite{johnson2004model}.
+
+Here, I use data from multiple microbial growth studies to apply two phenomenological models (Quadratic and Cubic) and two mechanistic models (Logistic and Gompertz). As formulated previously, it is expected that phenomenological models will fit most of the models capturing the general patterns of the observed data, whilst the mechanical models will better capture the biological features implemented in these. We will then use model selection approaches as suggested in \cite{johnson2004model} to confirm the appropriate models that maximizes the fit for the given datasets.
+
+
+\section{Methods}
+
+\subsection{Data Cleaning and Data Exploration}
+The data was gathered from the online repository for the coursework The Multilingual Quantitative Biologist hosted at GitHub \textbf{[URL]}. The data contains microbial growth curves from 10 different studies (Table 1) which collected data overtime on bacterial growth across different mediums and temperatures for different species.
+
+
+I started to remove all the observations that have recorded population biomass or number of cells equal or lower than zero, as well as, observations that had negative time values as this could confounded any further biological analysis.
+
+After, I have created unique combinations IDs for species, medium, temperature combined with their unique study, or citation, so I could analyse unique growth curves with the same specific characteristics. In total it was generated 285 data sets. For last, I have also removed unique IDs that had lower than five observations. This is explained by the fact that certain models developed to apply for bacterial growth curves have the same amount of parameters and this could result in model overfitting. The combined loss of observations on my data cleaning process have resulted in 175 observations dropped which corresponds to 3.9\% of the total  data set and giving a total of 267 datasets with unique combinations for model fitting.
+%After initial analysis of these data sets, I also corrected the data from \cite{phillips1987relation} which has time values miscalculated according the figures presented in the paper
+
+
+
+\begin{table}[h]
+\caption{Studies used for the model fitting} %title of the table
+\centering % centering table
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{l}
+\hline\hline
+"Growth characteristics and biofilm formation of various spoilage bacteria isolated from fresh produce." \cite{bae2014growth}\\
+\hline
+"Metabolic theory and the temperature-size rule explain the temperature dependence of population carrying capacity."\cite{bernhardt2018metabolic}\\
+\hline
+"Predicting bacterial growth in raw, salted, and cooked chicken breast fillets during storage."\cite{galarz2016predicting}\\
+\hline
+"Growth of Escherichia coli and Salmonella typhimurium on high-pH beef packed under vacuum or carbon dioxide."\cite{gill1991growth}\\
+\hline
+"The relation between temperature and growth of bacteria in dairy products."\cite{phillips1987relation}\\
+\hline
+"Continuity of psychrophilic and mesophilic growth characteristics in the genus Arthrobacter."\cite{roth1962continuity}\\
+\hline
+"Modelling the growth of lactic acid bacteria at different temperatures."\cite{silva2018modelling}\\
+\hline
+"Effects of light, temperature, nitrate, orthophosphate, and bacteria on growth of and hepatotoxin production by Oscillatoria agardhiistrains."\cite{sivonen1990effects}\\
+\hline
+"Temperature/growth relationships for psychrotrophic food-spoilage bacteria."\cite{stannard1985temperature}\\
+\hline
+"Modeling of bacterial growth with shifts in temperature."\cite{zwietering1994modeling}\\
+\hline 
+\end{tabular}
+}
+\end{table}
+
+
+\subsection{Computing Tools}
+
+For data processing and analysis I have used mainly \emph{R} version 4.2.2 \cite{R_citation}. Most of the functionalities are from base \emph{R} but I have also explore the use of \emph{readr} \cite{readrcitation} package to import tabular data, \emph{dplyr} \cite{dplyrcitation} to add extra features for the ease of data wrangling and \emph{stats} \cite{R_citation} package for the implementation of the Ordinary Least Squares estimations. I have also made good use of the notorious \emph{ggplot2} \cite{ggplot2citation} package to assist in beautiful plotting of the models and graph annotations. Additionally, for solving non linear least squares problems I have used the package min.pack.lm \cite{elzhov2010r} that it provides modification of the Levenberg-Marquardt algorithm with integrated options to control for iterations,  print its iterated outputs, and set upper and lower bounds. I have opted to develop my workflow with R because it provides a whole environment to work with data, run your analysis with well implemented functions, a dedicated statistical interface and directly generate your resulting figures.
+
+For the report writing I have used LaTeX for the ease of continuous developing of the analysis and the fact that it is a markup language that produces excellent article types, handling with the layout and formatting along.
+
+Finally, I have used Bash version 5.1.16 \cite{gnu2007free} to run the workflow scripts that clean and manipulate the data, run the model fitting, produce the plotting and compiles the LaTeX using a bash script.
+\newline
+
+
+\subsection{Mathematical Models}
+
+In this report I have applied two phenomenological models:
+
+1. Quadratic (Eq. (1)):
+\begin{equation}
+    N_t = at^2 + bt + c
+\end{equation}
+
+2. Cubic (Eq. (2)):
+\begin{equation}
+    N_t = at^3 + bt^2 + ct + d
+\end{equation}
+
+where, \emph{t} represents time, \emph{a}, \emph{b}, \emph{c} and, an additional term \emph{d} for the Cubic Polynomial (Eq. (2)), which are terms without any biological meaning, although allow us to forecast the existence of patterns;
+\newline
+
+And two mechanistic models:
+
+Logistic (Eq. (3)):
+\begin{equation}
+    N_t = \frac{N_0Ke^{rt}}{K + N_0(e^{rt} - 1)}
+\end{equation}
+
+where, \emph{t} represents time, \emph{N\textsubscript{0}} represents the initial population, \emph{K} is the carrying capacity and \emph{r} it is the growth rate;
+\newline
+
+Gompertz (Eq. (4)):
+\begin{equation}
+    log(N_t) = N_0 + (N_{max} - N_0)e^{-e^{r_{max}exp(1)\frac{t_{lag}-t}{(N_{max}-N_0)log(10)}+1}}
+\end{equation}
+
+where, \emph{t} representing time, \emph{N\textsubscript{0}} the initial population, \emph{N\textsubscript{max}} is the maximum population density, \emph{r\textsubscript{max}} maximum growth rate and \emph{t\textsubscript{lag}} is the time delayed until population starts to growth.
+
+
+\subsection{Model Fitting Description}
+
+For model fitting I used Ordinary Least Squares to fit the Quadratic and Cubic models and Non Linear Least Squares for the Logistic and Gompertz models. For each successful fit I have also calculated normality of residuals and store its estimated values for further model selection procedures.
+
+Specifically, a more direct approach was used to calculate Polynomial models, using the \emph{lm()} function from \emph{stats} package without any transformation to the data. Here, all models have fitted the data, I extracted its coefficients and get the estimates using \emph{predict.lm} function.
+
+
+For the calculation of the non-linear least square models, I used a function \emph{nlsLM} function from the \emph{minpack.lm}. Prior to the model fitting I have log-transformed the data to further facilitate model comparison. For this purpose I had to adjust the Logistic equation (Eq. (3)) so both parts of the equation were in the same scale. The log-transformed version of this is as follows:
+
+Log-Logistic (Eq. (5)):
+\begin{equation}
+    log(N_t) = log(N_0) + log(K) + rt - log(K + N_0(e^{rt} - 1))
+\end{equation}
+
+To calculate the maximum fit by reducing the residual sum of squares I have generated uniform distributions, sampling values for the initial parameters, setting the lower bounds to zero (0), while allowing the upper to vary around the mean of the population biomass or number of cells size or two-fold its initial value.
+
+The determination of the initial values for the Gompertz model are similar, but for this model I have used randomized values from normal distribution, setting the lower and upper bounds to vary around 2 orders of magnitude calculated from the grand mean of the population biomass or number of cells size or their initial value. Here, I also had to specifically set to zero (0) the lower bound for lagging time.
+
+Simulations have run for a maximum of 200 iterations over 25 to 30 sampling values, for Logistic and Gompertz, respectively.
+
+
+\subsection{Model Selection}
+
+For model comparison I have calculate AIC (Akaike's Information Criterion) and BIC (Schwartz Criterion). These two metrics calculate the maximum likelihood of the model to approximate the given data given the following formulas:
+\newline
+
+AIC (Eq. (6)):
+\begin{equation}
+    AIC = -2log(L) + 2k
+\end{equation}
+
+
+BIC (Eq. (7)):
+\begin{equation}
+    BIC = -2log(L) + klog(n)
+\end{equation}
+
+where, \emph{L} is the estimated likelihood, \emph{k} is the number of parameters and \emph{n} the sample size.
+
+Moreover, due to the great number of data sets with small number of observations, it seems to be more appropriated to use the corrected version for AIC that accounts for smaller sample sizes. Therefore, $AICc$ was the metric selected for model selection.
+\newline
+
+AICc (Eq. (8)):
+\begin{equation}
+    AICc = AIC + \frac{2k^2+2k}{n - k - 1}
+\end{equation}
+
+where, \emph{k} is the number of parameters and \emph{n} the sample size.
+
+
+
+\section{Results}
+
+\subsection{Total Model Fits}
+
+After filtering and removing datasets that might lead to spurious results, I collected for analysis 267 growth curves. All the models have fitted the data with greater success rate for the polynomial Quadratic and Cubic. Phenomenological models have fitted all the growth curves, whilst the Gompertz model have fitted 266 models (99.6\%) and the Logistic have fitted 262 models (98.2\%) (Table 2).
+
+\begin{table}[H]
+    \caption{Number of fits and its proportional fitting.}
+    \centering
+    \begin{tabular}{ccc}
+    \hline
+    Model & Number of Fits  & Percentage of the fits \\ 
+    \hline
+    \hline
+     Quadratic & 267 & 100\% \\
+     Cubic & 267 & 100\% \\
+     Logistic & 262 & 99.6\% \\
+     Gompertz & 266 & 98.2\%
+    \end{tabular}
+\end{table}
+
+\subsection{Model Selection}
+
+The results shown on Figure 1 and 2 show that models have performed better with Gompertz mathematical parameterisations, for either AICc and BIC.
+
+
+
+\begin{figure}[H]
+      \begin{center}
+      \includegraphics[width=0.5\textwidth]{../results/model_fit_AICc.png}
+      \caption{Proportion of best model selection using AIC with correction (AICc)}
+      \label{fig:AICc}
+      \end{center}
+\end{figure}
+
+\begin{figure}[H]
+      \begin{center}
+      \includegraphics[width=0.5\textwidth]{../results/model_fit_BIC.png}
+      \caption{Proportion of best model selection using Schwartz Criterion (BIC)}
+      \label{fig:BIC}
+      \end{center}
+\end{figure}
+
+
+According to the summary Table 3 on model selection, Gompertz models loose some performance when comparing AIC with correction for small sample size.
+
+
+\begin{table}[H]
+    \caption{Model selection using Information Criterion}
+    \centering
+    \begin{tabular}{cccc}
+    \hline
+    Model & AIC  & AICc & BIC\\ 
+    \hline
+    \hline
+     Cubic & 19\% & 14\% & 19\% \\
+     Gompertz & 64\% & 54\% & 63\% \\
+     Logistic & 10\% & 19\% & 11\% \\
+     Quadratic & 7\% & 13\% & 7\%
+    \end{tabular}
+\end{table}
+
+
+
+\section{Discussion}
+
+The complexity for modelling microbial communities and precisely capture the parameters that explains their population dynamics has been puzzling questions with multiple variables always factoring. Here, I performed model fitting and model selection across multiple bacterial growth data sets using phenomenological and mechanistic models, and tested their performance according to information criteria.
+
+The results collected in this report suggests that mechanistic models can capture most of bacterial population dynamics. This is explained by the founded models being developed and that included parameters that can specifically capture the different phases along the growth curve.
+
+Another important fact to note is that in some growth curves polynomial cubic models have outperformed logistic models. This suggests that at certain medium, temperature or species there are some particular and specific processes that could not be capture by mechanical models but with phenomenological, emphasising here the strengths of these models for its generalism.
+
+Model selection beyond the traditional null hypothesis is becoming a robust method to confront competing models that are fitted to data and unravel the mechanisms in such systems.    
+
+
+    %Sets the bibliography style to APALIKE and imports the 
+    %bibliography file "project_references.bib".
+    \bibliographystyle{apalike}
+    \bibliography{project_references}
+\end{document}
