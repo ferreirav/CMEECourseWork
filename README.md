@@ -83,7 +83,7 @@ In [Week3](https://github.com/vitorlcferreira/CMEECourseWork/tree/master/week3) 
 
 <br>
 
-### Computing Miniproject
+## Computing Miniproject
 
 In [Miniproject](https://github.com/vitorlcferreira/CMEECourseWork/tree/master/Miniproject) folder are the files to run a computational project developed in the run of the first term for CMEE course.
 

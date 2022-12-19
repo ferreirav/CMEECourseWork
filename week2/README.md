@@ -54,8 +54,8 @@ In this folder are the scripts and essential data to run the practicals from the
 
 ## Groupwork Practicals Scripts:
 
-- align_seqs_fasta.py - this script aligns two DNA sequences from fasta file given
+- [align_seqs_fasta.py](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week2/code/align_seqs_fasta.py) - this script aligns two DNA sequences from fasta file given
 
-- align_seqs_better.py - this script finds the best (and equally) best alignments for sequences given.
+- [align_seqs_better.py](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week2/code/align_seqs_better.py) - this script finds the best (and equally) best alignments for sequences given.
 
-- oaks_groupwork.py - This script modifies headers on searches and outputs
+- [oaks_groupwork.py](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week2/code/oaks_groupwork.py) - This script modifies headers on searches and outputs

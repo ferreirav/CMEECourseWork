@@ -64,16 +64,16 @@ In this folder are the scripts and essential data to run the practicals from the
 
 ## Groupwork Practicals Scripts:
 
-- [get_TreeHeight.R] - function that calculates height of the tress given the distance of each tree from its base and angle to its top
+- [get_TreeHeight.R](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week3/code/get_TreeHeight.R) - function that calculates height of the tress given the distance of each tree from its base and angle to its top
 
-- [get_TreeHeight.py] - same as the above function, but here a python version
+- [get_TreeHeight.py](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week3/code/get_TreeHeight.py) - same as the above function, but here a python version
 
-- [run_get_TreeHeight.sh] - a bash script to run the TreeHeight scripts from both interpreter
+- [run_get_TreeHeight.sh](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week3/code/run_get_TreeHeight.sh) - a bash script to run the TreeHeight scripts from both interpreter
 
-- [TAutoCorr.R] - an R script that contains the analysis of a time series autocorrelation on a temperature relationship for Florida 
+- [TAutoCorr.R](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week3/code/TAutoCorr.R) - an R script that contains the analysis of a time series autocorrelation on a temperature relationship for Florida 
 
-- [TAutoCorr.tex] - ***LaTeX*** source file for document processing
+- [TAutoCorr.tex](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week3/code/TAutoCorr.tex) - ***LaTeX*** source file for document processing
 
-- [TAutoCorr.bib] - bibtex file with references for [TAutoCorr.tex] file
+- [TAutoCorr.bib](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week3/code/TAutoCorr.bib) - bibtex file with references for [TAutoCorr.tex] file
 
-- [PP_Regress_loc.R] - R scirpt with analysis of regression of types of interaction per location
+- [PP_Regress_loc.R](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week3/code/PP_Regress_loc.R) - R scirpt with analysis of regression of types of interaction per location
