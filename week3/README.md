@@ -56,3 +56,24 @@ In this folder are the scripts and essential data to run the practicals from the
 - [Florida_Prac.tex](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week3/code/Florida_Prac.tex) - source LaTeX code for the Florida results
 
 - [SQLinR.R](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week3/code/SQLinR.R) - script handles with database manipulations and queries
+
+<br>
+
+---
+<br>
+
+## Groupwork Practicals Scripts:
+
+- [get_TreeHeight.R] - function that calculates height of the tress given the distance of each tree from its base and angle to its top
+
+- [get_TreeHeight.py] - same as the above function, but here a python version
+
+- [run_get_TreeHeight.sh] - a bash script to run the TreeHeight scripts from both interpreter
+
+- [TAutoCorr.R] - an R script that contains the analysis of a time series autocorrelation on a temperature relationship for Florida 
+
+- [TAutoCorr.tex] - ***LaTeX*** source file for document processing
+
+- [TAutoCorr.bib] - bibtex file with references for [TAutoCorr.tex] file
+
+- [PP_Regress_loc.R] - R scirpt with analysis of regression of types of interaction per location

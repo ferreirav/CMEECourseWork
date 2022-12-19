@@ -47,3 +47,15 @@ In this folder are the scripts and essential data to run the practicals from the
 
 - [using_name.py](https://github.com/vitorlcferreira/CMEECourseWork/blob/master/week2/code/using_name.py) - this script just takes the __name__variable and feeds it into print statements according to interpreter
 
+<br>
+
+---
+<br>
+
+## Groupwork Practicals Scripts:
+
+- align_seqs_fasta.py - this script aligns two DNA sequences from fasta file given
+
+- align_seqs_better.py - this script finds the best (and equally) best alignments for sequences given.
+
+- oaks_groupwork.py - This script modifies headers on searches and outputs
